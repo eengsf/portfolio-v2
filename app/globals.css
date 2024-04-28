@@ -2,32 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-image-dark {
+  background-image: url("../public/bg22.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-image-light {
+  background-image: url("../public/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inverted-border-radius-light::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 30px;
+  height: 20px;
+  background-color: rgb(10, 17, 43);
+  border-radius: 16px 0 0 0;
+}
+.inverted-border-radius-light::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 30px;
+  height: 20px;
+  background-color: #030c13;
+  border-radius: 16px 0 0 0;
+  z-index: 1;
+}
+.inverted-border-radius-dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 30px;
+  height: 20px;
+  background-color: #f6eed7;
+  border-radius: 16px 0 0 0;
+}
+.inverted-border-radius-dark::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 30px;
+  height: 20px;
+  background-color: #fcefe6;
+  border-radius: 16px 0 0 0;
+  z-index: 1;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(-15deg);
   }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  45% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.shake {
+  animation: shake 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
 }
