@@ -9,7 +9,7 @@ const AsideHeader = () => {
   const dispatch = useDispatch();
   return (
     <div
-      className={`flex flex-col w-full h-64 relative ${
+      className={`flex flex-col w-full min-h-64 relative ${
         theme ? "text-black" : "text-white"
       }`}>
       <div

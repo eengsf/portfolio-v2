@@ -4,7 +4,7 @@ import AsideNavbar from "./AsideNavbar";
 
 const Aside = () => {
   return (
-    <aside className="flex flex-col w-full">
+    <aside className="flex flex-col w-full h-full">
       <AsideHeader />
       <AsideNavbar />
       <AsideFooter />

@@ -12,7 +12,7 @@ const Pages = () => {
         <TopNavbar />
       </div>
       <div className="flex 2md:flex-row flex-col max-w-6xl 2md:h-screen h-full mx-auto 2md:py-12 pb-5 pt-28 2lg:px-0 2md:px-10 px-5 gap-12">
-        <aside className="w-60 2md:flex hidden">
+        <aside className="w-60 h-full 2md:flex hidden">
           <Aside />
         </aside>
         <main className="flex flex-1">

@@ -19,11 +19,15 @@ body::-webkit-scrollbar {
   background-image: url("../public/bg22.png");
   background-size: cover;
   background-repeat: no-repeat;
+  border: none;
+  border-style: none;
 }
 .bg-image-light {
   background-image: url("../public/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border: none;
+  border-style: none;
 }
 
 .inverted-border-radius-light::after {
@@ -35,6 +39,8 @@ body::-webkit-scrollbar {
   height: 20px;
   background-color: rgb(10, 17, 43);
   border-radius: 16px 0 0 0;
+  border: none;
+  border-style: none;
 }
 .inverted-border-radius-light::before {
   content: "";
@@ -45,6 +51,8 @@ body::-webkit-scrollbar {
   height: 20px;
   background-color: #030c13;
   border-radius: 16px 0 0 0;
+  border: none;
+  border-style: none;
   z-index: 1;
 }
 .inverted-border-radius-dark::after {
@@ -56,6 +64,8 @@ body::-webkit-scrollbar {
   height: 20px;
   background-color: #f6eed7;
   border-radius: 16px 0 0 0;
+  border: none;
+  border-style: none;
 }
 .inverted-border-radius-dark::before {
   content: "";
@@ -66,6 +76,8 @@ body::-webkit-scrollbar {
   height: 20px;
   background-color: #fcefe6;
   border-radius: 16px 0 0 0;
+  border: none;
+  border-style: none;
   z-index: 1;
 }
 @keyframes shake {

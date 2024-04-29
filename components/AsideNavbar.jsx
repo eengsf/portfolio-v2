@@ -9,7 +9,7 @@ const AsideNavbar = () => {
   const dispatch = useDispatch();
   return (
     <nav
-      className={`flex flex-col gap-2 py-4 border-b border-b-slate-300 ${
+      className={`flex flex-1 flex-col gap-2 py-4 border-b border-b-slate-300 ${
         theme ? "text-black" : "text-white"
       }`}>
       <button
