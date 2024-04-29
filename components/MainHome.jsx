@@ -101,7 +101,7 @@ const MainHome = () => {
       <div className="flex flex-col gap-5 2md:p-8 p-5 border border-slate-300 rounded-xl">
         <div className="flex gap-2 2md:text-2xl text-xl items-center ">
           <Logo name={"rocket"} size={25} />
-          <h1 className="font-semibold">Let's explore</h1>
+          <h1 className="font-semibold">Let{"'"}s explore</h1>
         </div>
         <div>
           <p className="text-justify">

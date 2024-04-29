@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Hamburger from "./Hamburger";
 import Logo from "./Logo";
@@ -32,7 +34,7 @@ const TopNavbar = () => {
               burger ? "w-[85px] h-[85px] " : "w-12 h-12 animate-fadeIn"
             }`}>
             <Image
-              src="/icon.jpeg"
+              src={`${theme ? "/eengbiru.jpg" : "/eengmerah.jpg"}`}
               alt="logo"
               width={100}
               height={100}
