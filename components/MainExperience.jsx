@@ -5,7 +5,7 @@ const obj = {
   soket: {
     img: "logo-soket.JPG",
     judul: "Head of Programming Division",
-    category: "UKM-FT SOKET, Jan 2020 - Des 2020",
+    category: "UKM-FT SOKET, Jan 2020 - Dec 2020",
     desc: [
       // "Bertanggung jawab membuat dan mengembangkan code untuk mengontrol robot dan integrasi sensor",
       // "Bertanggung jawab dalam pengujian, debugging, dan pemeliharaan perangkat lunak robot serta melakukan pembaruan sesuai kebutuhan",
@@ -22,7 +22,7 @@ const obj = {
   robotic: {
     img: "logo-tim-robot.PNG",
     judul: "Programmer for the legged Robot Division",
-    category: "Trunojoyo Robotic Team, Jan 2020 - Des 2021",
+    category: "Trunojoyo Robotic Team, Jan 2020 - Dec 2021",
     desc: [
       // "Membuat dan mengembangkan code robot pemadam api dan robot SAR",
       // "Melakukan pengujian, debugging, dan pemeliharaan perangkat lunak robot serta melakukan pembaruan sesuai kebutuhan",
@@ -35,7 +35,7 @@ const obj = {
   elektro: {
     img: "logo-elektro.jpg",
     judul: "Assistant for Database Management Practicum",
-    category: "Electronic Laboratory, Mar 2022 - Mei 2022",
+    category: "Electronic Laboratory, Mar 2022 - May 2022",
     desc: [
       // "Menyiapkan materi praktikum dan memberi arahan bimbingan ke peserta praktikum saat praktikum berlangsung",
       // "Membantu dalam penilaian tugas-tugas yang dikerjakan peserta praktikum dan membantu dalam penyelenggaraan ujian praktikum",

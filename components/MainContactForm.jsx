@@ -7,6 +7,7 @@ const MainContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSending, setIsSending] = useState(false);
   const { theme } = useSelector((state) => state.counterSlice);
 
   const handleSubmit = async (e) => {
@@ -35,6 +36,8 @@ const MainContactForm = () => {
       }
     } catch (error) {
       console.log(error);
+    } finally {
+      setIsSending(false);
     }
   };
   return (
@@ -80,12 +83,13 @@ const MainContactForm = () => {
         }`}></textarea>
       <button
         type="submit"
+        disabled={isSending}
         className={`py-2 px-5 rounded-lg ${
           theme
             ? "bg-blue-300 hover:bg-blue-950 "
             : "bg-orange-500 hover:bg-orange-900 "
         }`}>
-        Send
+        {isSending ? "Sending..." : "Send"}
       </button>
     </form>
   );

@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Logo from "./Logo";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const MainAboutSertif = ({ img, judul, desc, category, link }) => {
+  const { theme } = useSelector((state) => state.counterSlice);
   return (
     <div className="flex sm:flex-row flex-col gap-3 w-full sm:p-4 p-0 border border-slate-300 rounded-xl">
       <div className="sm:w-32 w-full sm:h-24 h-full relative group">
@@ -24,7 +26,11 @@ const MainAboutSertif = ({ img, judul, desc, category, link }) => {
       </div>
       <div className="flex flex-1 flex-col gap-3 sm:p-0 p-4">
         <div className="flex flex-col">
-          <Link href={link} className="text-lg font-semibold">
+          <Link
+            href={link}
+            className={`text-lg font-semibold ${
+              theme ? "hover:text-blue-500" : "hover:text-orange-500"
+            }`}>
             {judul}
           </Link>
           <i className="text-sm">{category}</i>

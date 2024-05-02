@@ -109,7 +109,9 @@ const MainHome = () => {
             check out my resume
           </p>
           <Link
-            href={""}
+            href={
+              "https://drive.google.com/file/d/1OFg82tnF3sxilWMu_vxhsWDoRFOvWbvL/view?usp=sharing"
+            }
             className={`inline-flex gap-2 items-center mt-4 ${
               theme ? "bg-blue-300" : "bg-orange-500"
             } py-2 px-5 rounded-lg hover:scale-105`}>

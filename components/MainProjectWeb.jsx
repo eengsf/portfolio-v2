@@ -36,11 +36,31 @@ const obj = {
     tech: ["Next.js", "Tailwindcss", "Redux Toolkit", "Framer Motion"],
     link: "https://asc-sf.vercel.app/",
   },
+  portfolio: {
+    img: "portfolio-v2.png",
+    name: "Portfolio",
+    desc: "Personal Website and portfolio built with Next.js and Tailwind CSS.",
+    tech: [
+      "Next.js",
+      "Tailwindcss",
+      "Redux Toolkit",
+      "Framer Motion",
+      "Mongodb",
+    ],
+    link: "https://portfolio-v2-rho-murex.vercel.app/",
+  },
 };
 
 const MainProjectWeb = () => {
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-0 py-8">
+      <MainProjectWebDetail
+        img={obj.portfolio.img}
+        name={obj.portfolio.name}
+        desc={obj.portfolio.desc}
+        tech={obj.portfolio.tech}
+        link={obj.portfolio.link}
+      />
       <MainProjectWebDetail
         img={obj.responsifWeb.img}
         name={obj.responsifWeb.name}
