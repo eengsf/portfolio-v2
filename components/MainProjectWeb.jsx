@@ -67,7 +67,7 @@ const obj = {
     img: "onlineshopeeng.png",
     name: "Online Shop",
     desc: "A simple online shop application with features for category filtering, sorting, and searching for products, as well as adding items to a shopping cart that is saved to each user's account.",
-    tech: ["Laravel", "React.js", "Tailwindcss"],
+    tech: ["Laravel", "MySQL", "React.js", "Tailwindcss"],
     linkDemo: "https://online-shop.vercel.app/",
     linkCode: "https://github.com/eengsf/eeng-shop",
   },
