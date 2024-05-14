@@ -4,7 +4,14 @@ import Logo from "./Logo";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
-const MainProjectWebDetail = ({ img, name, desc, tech, link }) => {
+const MainProjectWebDetail = ({
+  img,
+  name,
+  desc,
+  tech,
+  linkCode,
+  linkDemo,
+}) => {
   const { theme } = useSelector((state) => state.counterSlice);
   return (
     <motion.div
@@ -13,25 +20,31 @@ const MainProjectWebDetail = ({ img, name, desc, tech, link }) => {
       transition={{ duration: 0.7 }}
       className="p-2">
       <div className="w-full md:h-[450px] sm:h-[420px] h-full rounded-lg border border-slate-300 group/project transform transition-all duration-300 hover:scale-[102%] pb-4">
-        <Link href={link}>
-          <div className="w-full md:h-[55%] sm:h-[65%] h-[50%] relative">
-            <div className="absolute top-0 left-0 flex gap-2 justify-center items-center w-full h-full font-semibold text-white bg-black/70 rounded-t-lg text-lg opacity-0 transition-all duration-300 group-hover/project:opacity-100">
-              <h1>View Project</h1>
-              <Logo name={"arrowright"} size={24} />
-            </div>
-            <Image
-              src={`/${img}`}
-              alt="image"
-              width={500}
-              height={500}
-              className="object-cover object-top rounded-t-lg w-full h-full"
-            />
+        <div className="w-full md:h-[55%] sm:h-[65%] h-[50%] relative">
+          <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full gap-5 text-white transition-all duration-300 rounded-t-lg opacity-0 bg-black/70 group-hover/project:opacity-100">
+            <Link
+              href={linkCode}
+              className="px-4 py-2 rounded-full bg-slate-400 hover:scale-110">
+              <h1 className="text-sm font-bold">Code</h1>
+            </Link>
+            <Link
+              href={linkDemo}
+              className="px-4 py-2 rounded-full bg-slate-400 hover:scale-110">
+              <h1 className="text-sm font-bold">Demo</h1>
+            </Link>
           </div>
-        </Link>
+          <Image
+            src={`/${img}`}
+            alt="image"
+            width={500}
+            height={500}
+            className="object-cover object-top w-full h-full rounded-t-lg"
+          />
+        </div>
         <div className="flex flex-col gap-2 justify-between w-full md:h-[45%] sm:h-[35%] h-[50%] p-5">
           <div className="flex flex-col gap-1">
             <Link
-              href={link}
+              href={linkDemo}
               className={`font-semibold text-xl ${
                 theme
                   ? "group-hover/project:text-blue-500"
@@ -39,15 +52,15 @@ const MainProjectWebDetail = ({ img, name, desc, tech, link }) => {
               } `}>
               {name}
             </Link>
-            <p className="text-justify text-sm ">{desc}</p>
+            <p className="text-sm text-justify ">{desc}</p>
           </div>
-          <div className="flex gap-3 relative">
+          <div className="relative flex gap-3">
             {tech.map((item, index) => (
               <div
                 key={index}
-                className="group/tech cursor-pointer overflow-x-hidden">
+                className="overflow-x-hidden cursor-pointer group/tech">
                 <Logo name={item} size={24} />
-                <div className="absolute -z-10 transition-all duration-300 opacity-0 group-hover/tech:opacity-100 group-hover/tech:z-0 top-0 right-0">
+                <div className="absolute top-0 right-0 transition-all duration-300 opacity-0 -z-10 group-hover/tech:opacity-100 group-hover/tech:z-0">
                   <p>{item}</p>
                 </div>
               </div>
