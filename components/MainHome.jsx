@@ -13,7 +13,7 @@ const MainHome = () => {
       className="pb-12">
       <div className="flex flex-col gap-5 pb-5 border-b border-b-slate-300">
         <div className="flex flex-col gap-2">
-          <h1 className="2md:text-3xl text-2xl font-semibold flex">
+          <h1 className="flex text-2xl font-semibold 2md:text-3xl">
             Hi, Iam Shofiyul Fuad
             <span className="shake">👋</span>
           </h1>
@@ -27,79 +27,79 @@ const MainHome = () => {
       </div>
       <div className="flex flex-col gap-5 py-5">
         <div className="flex flex-col gap-1">
-          <div className="flex gap-2 text-xl items-center">
+          <div className="flex items-center gap-2 text-xl">
             <Logo name="code" size={20} />
             <h1 className="font-semibold">Skills</h1>
           </div>
           <h1 className="text-sm">My coding skills</h1>
         </div>
         <div>
-          <ul className="2md:flex grid grid-cols-4 justify-between ">
-            <li className="flex flex-col gap-2 items-center group/html pb-2">
+          <ul className="grid justify-between grid-cols-4 2md:flex ">
+            <li className="flex flex-col items-center gap-2 pb-2 group/html">
               <Logo name="HTML5" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/html:opacity-100 group-hover/html:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/html:opacity-100 group-hover/html:translate-y-0">
                 HTML5
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/css">
+            <li className="flex flex-col items-center gap-2 pb-2 group/css">
               <Logo name="CSS" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/css:opacity-100 group-hover/css:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/css:opacity-100 group-hover/css:translate-y-0">
                 CSS
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/js">
+            <li className="flex flex-col items-center gap-2 pb-2 group/js">
               <Logo name="JavaScript" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/js:opacity-100 group-hover/js:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/js:opacity-100 group-hover/js:translate-y-0">
                 Javascript
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/php">
+            <li className="flex flex-col items-center gap-2 pb-2 group/php">
               <Logo name="PHP" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/php:opacity-100 group-hover/php:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/php:opacity-100 group-hover/php:translate-y-0">
                 PHP
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/react">
+            <li className="flex flex-col items-center gap-2 pb-2 group/react">
               <Logo name="React.js" size={35} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/react:opacity-100 group-hover/react:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/react:opacity-100 group-hover/react:translate-y-0">
                 React.js
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/next">
+            <li className="flex flex-col items-center gap-2 pb-2 group/next">
               <Logo name="Next.js" size={35} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/next:opacity-100 group-hover/next:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/next:opacity-100 group-hover/next:translate-y-0">
                 Next.js
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/laravel">
+            <li className="flex flex-col items-center gap-2 pb-2 group/laravel">
               <Logo name="Laravel" size={35} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/laravel:opacity-100 group-hover/laravel:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/laravel:opacity-100 group-hover/laravel:translate-y-0">
                 Laravel
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/tail">
+            <li className="flex flex-col items-center gap-2 pb-2 group/tail">
               <Logo name="Tailwindcss" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/tail:opacity-100 group-hover/tail:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/tail:opacity-100 group-hover/tail:translate-y-0">
                 Tailwind
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/mongo">
+            <li className="flex flex-col items-center gap-2 pb-2 group/mongo">
               <Logo name="Mongodb" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/mongo:opacity-100 group-hover/mongo:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mongo:opacity-100 group-hover/mongo:translate-y-0">
                 Mongodb
               </h1>
             </li>
-            <li className="flex flex-col gap-2 items-center pb-2 group/mysql">
+            <li className="flex flex-col items-center gap-2 pb-2 group/mysql">
               <Logo name="MySQL" size={40} />
-              <h1 className="text-xs -translate-y-full transition-all duration-300 opacity-0 group-hover/mysql:opacity-100 group-hover/mysql:translate-y-0">
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mysql:opacity-100 group-hover/mysql:translate-y-0">
                 MySQL
               </h1>
             </li>
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-5 2md:p-8 p-5 border border-slate-300 rounded-xl">
-        <div className="flex gap-2 2md:text-2xl text-xl items-center ">
+      <div className="flex flex-col gap-5 p-5 border 2md:p-8 border-slate-300 rounded-xl">
+        <div className="flex items-center gap-2 text-xl 2md:text-2xl ">
           <Logo name={"rocket"} size={25} />
           <h1 className="font-semibold">Let{"'"}s explore</h1>
         </div>
@@ -110,7 +110,7 @@ const MainHome = () => {
           </p>
           <Link
             href={
-              "https://drive.google.com/file/d/1OFg82tnF3sxilWMu_vxhsWDoRFOvWbvL/view?usp=sharing"
+              "https://drive.google.com/file/d/1UFsp4UXY8q-3Y6kzdztzOwpq4lcTxmgf/view?usp=sharing"
             }
             className={`inline-flex gap-2 items-center mt-4 ${
               theme ? "bg-blue-300" : "bg-orange-500"
