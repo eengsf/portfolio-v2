@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const MainHome = () => {
   const { theme } = useSelector((state) => state.counterSlice);
@@ -93,6 +94,58 @@ const MainHome = () => {
               <Logo name="MySQL" size={40} />
               <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mysql:opacity-100 group-hover/mysql:translate-y-0">
                 MySQL
+              </h1>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex flex-col gap-5 py-5">
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center gap-2 text-xl">
+            <Logo name="code" size={20} />
+            <h1 className="font-semibold">Skills</h1>
+          </div>
+          <h1 className="text-sm">My coding skills</h1>
+        </div>
+        <div>
+          <ul className="grid w-1/5 grid-cols-4 2md:justify-between 2md:flex ">
+            <li className="flex flex-col items-center gap-2 pb-2 bg-yellow-200 group/c">
+              <Logo name="C Lang" size={40} />
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/c:opacity-100 group-hover/html:translate-y-0">
+                C Lang
+              </h1>
+            </li>
+            <li className="flex flex-col items-center gap-2 pb-2 group/c++ bg-blue-200">
+              <Logo name="C++" size={40} />
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/c++:opacity-100 group-hover/html:translate-y-0">
+                C++
+              </h1>
+            </li>
+            <li className="flex flex-col items-center gap-2 pb-2 bg-red-200 group/arduino">
+              <Logo name="Arduino" size={40} />
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/arduino:opacity-100 group-hover/html:translate-y-0">
+                Arduino
+              </h1>
+            </li>
+            <li className="flex flex-col items-center gap-2 pb-2 bg-green-200 group/eagle">
+              <div>
+                <Image src="/eagle.png" width={40} height={40} alt="eagle" />
+              </div>
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/eagle:opacity-100 group-hover/html:translate-y-0">
+                Autodesk Eagle
+              </h1>
+            </li>
+            <li className="flex flex-col items-center gap-2 pb-2 bg-blue-200 group/inventor">
+              <div>
+                <Image
+                  src="/inventor.png"
+                  width={40}
+                  height={40}
+                  alt="inventor"
+                />
+              </div>
+              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/inventor:opacity-100 group-hover/html:translate-y-0">
+                Autodesk Inventor
               </h1>
             </li>
           </ul>
