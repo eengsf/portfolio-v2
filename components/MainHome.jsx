@@ -18,7 +18,10 @@ const MainHome = () => {
             Hi, Iam Shofiyul Fuad
             <span className="shake">👋</span>
           </h1>
-          <li>front end developer</li>
+          <div className="flex gap-6">
+            <li>front end developer</li>
+            <li>robotic</li>
+          </div>
         </div>
         <p className="text-justify">
           I am a graduate of Electrical Engineering from Trunojoyo University. I
@@ -26,131 +29,130 @@ const MainHome = () => {
           on improving my skills in front-end development.
         </p>
       </div>
-      <div className="flex flex-col gap-5 py-5">
-        <div className="flex flex-col gap-1">
-          <div className="flex items-center gap-2 text-xl">
-            <Logo name="code" size={20} />
-            <h1 className="font-semibold">Skills</h1>
-          </div>
-          <h1 className="text-sm">My coding skills</h1>
+      <div className="flex flex-col gap-2 py-5">
+        <div className="flex items-center gap-2 mb-5 text-xl">
+          <Logo name="code" size={20} />
+          <h1 className="font-semibold">Skills</h1>
         </div>
-        <div>
-          <ul className="grid justify-between grid-cols-4 2md:flex ">
-            <li className="flex flex-col items-center gap-2 pb-2 group/html">
-              <Logo name="HTML5" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/html:opacity-100 group-hover/html:translate-y-0">
-                HTML5
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/css">
-              <Logo name="CSS" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/css:opacity-100 group-hover/css:translate-y-0">
-                CSS
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/js">
-              <Logo name="JavaScript" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/js:opacity-100 group-hover/js:translate-y-0">
-                Javascript
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/php">
-              <Logo name="PHP" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/php:opacity-100 group-hover/php:translate-y-0">
-                PHP
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/react">
-              <Logo name="React.js" size={35} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/react:opacity-100 group-hover/react:translate-y-0">
-                React.js
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/next">
-              <Logo name="Next.js" size={35} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/next:opacity-100 group-hover/next:translate-y-0">
-                Next.js
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/laravel">
-              <Logo name="Laravel" size={35} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/laravel:opacity-100 group-hover/laravel:translate-y-0">
-                Laravel
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/tail">
-              <Logo name="Tailwindcss" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/tail:opacity-100 group-hover/tail:translate-y-0">
-                Tailwind
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/mongo">
-              <Logo name="Mongodb" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mongo:opacity-100 group-hover/mongo:translate-y-0">
-                Mongodb
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/mysql">
-              <Logo name="MySQL" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mysql:opacity-100 group-hover/mysql:translate-y-0">
-                MySQL
-              </h1>
-            </li>
-          </ul>
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
+            <h1 className="text-sm">Skills Web Frontend</h1>
+          </div>
+          <div>
+            <ul className="grid justify-between grid-cols-4 2lg:flex">
+              <li className="flex flex-col items-center gap-2 pb-2 group/html">
+                <Logo name="HTML5" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/html:opacity-100 group-hover/html:translate-y-0">
+                  HTML5
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/css">
+                <Logo name="CSS" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/css:opacity-100 group-hover/css:translate-y-0">
+                  CSS
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/js">
+                <Logo name="JavaScript" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/js:opacity-100 group-hover/js:translate-y-0">
+                  Javascript
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/php">
+                <Logo name="PHP" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/php:opacity-100 group-hover/php:translate-y-0">
+                  PHP
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/react">
+                <Logo name="React.js" size={35} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/react:opacity-100 group-hover/react:translate-y-0">
+                  React.js
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/next">
+                <Logo name="Next.js" size={35} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/next:opacity-100 group-hover/next:translate-y-0">
+                  Next.js
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/laravel">
+                <Logo name="Laravel" size={35} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/laravel:opacity-100 group-hover/laravel:translate-y-0">
+                  Laravel
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/tail">
+                <Logo name="Tailwindcss" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/tail:opacity-100 group-hover/tail:translate-y-0">
+                  Tailwind
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/mongo">
+                <Logo name="Mongodb" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mongo:opacity-100 group-hover/mongo:translate-y-0">
+                  Mongodb
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/mysql">
+                <Logo name="MySQL" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mysql:opacity-100 group-hover/mysql:translate-y-0">
+                  MySQL
+                </h1>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
+            <h1 className="text-sm">Skills Robotic </h1>
+          </div>
+          <div>
+            <ul className="grid justify-between grid-cols-4 2md:flex 2md:max-w-lg">
+              <li className="flex flex-col items-center gap-2 pb-2 group/c">
+                <Logo name="C Lang" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/c:opacity-100 group-hover/c:translate-y-0">
+                  C Lang
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2   group/c++">
+                <Logo name="C++" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/c++:opacity-100 group-hover/c++:translate-y-0">
+                  C++
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/arduino">
+                <Logo name="Arduino" size={40} />
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/arduino:opacity-100 group-hover/arduino:translate-y-0">
+                  Arduino
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/eagle">
+                <div>
+                  <Image src="/eagle.png" width={40} height={40} alt="eagle" />
+                </div>
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/eagle:opacity-100 group-hover/eagle:translate-y-0">
+                  Eagle
+                </h1>
+              </li>
+              <li className="flex flex-col items-center gap-2 pb-2 group/inventor">
+                <div>
+                  <Image
+                    src="/inventor.png"
+                    width={40}
+                    height={40}
+                    alt="inventor"
+                  />
+                </div>
+                <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/inventor:opacity-100 group-hover/inventor:translate-y-0">
+                  Inventor
+                </h1>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5 py-5">
-        <div className="flex flex-col gap-1">
-          <div className="flex items-center gap-2 text-xl">
-            <Logo name="code" size={20} />
-            <h1 className="font-semibold">Skills</h1>
-          </div>
-          <h1 className="text-sm">My coding skills</h1>
-        </div>
-        <div>
-          <ul className="grid w-1/5 grid-cols-4 2md:justify-between 2md:flex ">
-            <li className="flex flex-col items-center gap-2 pb-2 bg-yellow-200 group/c">
-              <Logo name="C Lang" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/c:opacity-100 group-hover/html:translate-y-0">
-                C Lang
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 group/c++ bg-blue-200">
-              <Logo name="C++" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/c++:opacity-100 group-hover/html:translate-y-0">
-                C++
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 bg-red-200 group/arduino">
-              <Logo name="Arduino" size={40} />
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/arduino:opacity-100 group-hover/html:translate-y-0">
-                Arduino
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 bg-green-200 group/eagle">
-              <div>
-                <Image src="/eagle.png" width={40} height={40} alt="eagle" />
-              </div>
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/eagle:opacity-100 group-hover/html:translate-y-0">
-                Autodesk Eagle
-              </h1>
-            </li>
-            <li className="flex flex-col items-center gap-2 pb-2 bg-blue-200 group/inventor">
-              <div>
-                <Image
-                  src="/inventor.png"
-                  width={40}
-                  height={40}
-                  alt="inventor"
-                />
-              </div>
-              <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/inventor:opacity-100 group-hover/html:translate-y-0">
-                Autodesk Inventor
-              </h1>
-            </li>
-          </ul>
-        </div>
-      </div>
+
       <div className="flex flex-col gap-5 p-5 border 2md:p-8 border-slate-300 rounded-xl">
         <div className="flex items-center gap-2 text-xl 2md:text-2xl ">
           <Logo name={"rocket"} size={25} />
