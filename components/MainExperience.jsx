@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const obj = {
   soket: {
-    img: "logo-soket.JPG",
+    img: "logo-soket.jpg",
     judul: "Head of Programming Division",
     category: "UKM-FT SOKET, Jan 2020 - Dec 2020",
     desc: [
@@ -20,7 +20,7 @@ const obj = {
     ],
   },
   robotic: {
-    img: "logo-tim-robot.PNG",
+    img: "logo-tim-robot.png",
     judul: "Programmer for the legged Robot Division",
     category: "Trunojoyo Robotic Team, Jan 2020 - Dec 2021",
     desc: [
@@ -53,9 +53,9 @@ const MainExperience = () => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: [100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.7 }}
-      className="w-full h-full overflow-y-auto custom-scrollbar pb-12">
+      className="w-full h-full pb-12 overflow-y-auto custom-scrollbar">
       <div className="flex flex-col gap-2 pb-5">
-        <h1 className="2md:text-3xl text-2xl font-semibold">
+        <h1 className="text-2xl font-semibold 2md:text-3xl">
           College Experiences
         </h1>
       </div>
