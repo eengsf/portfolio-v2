@@ -14,7 +14,7 @@ const TopNavbar = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setBurger());
-  }, [navbar]);
+  }, [navbar, dispatch]);
 
   return (
     <div
@@ -38,7 +38,7 @@ const TopNavbar = () => {
               alt="logo"
               width={100}
               height={100}
-              className="w-full h-full object-cover rounded-full"
+              className="object-cover w-full h-full rounded-full"
             />
           </div>
           <h1
@@ -46,7 +46,7 @@ const TopNavbar = () => {
               burger ? "" : "animate-fadeIn"
             }`}>
             Shofiyul Fuad{" "}
-            <span className="2md:inline-block hidden">
+            <span className="hidden 2md:inline-block">
               <Logo name={"centangbiru"} size={24} />
             </span>
           </h1>

@@ -67,10 +67,10 @@ const MainAbout = () => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: [100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.7 }}
-      className="w-full h-full overflow-y-auto custom-scrollbar pb-12">
+      className="w-full h-full pb-12 overflow-y-auto custom-scrollbar">
       <div className="flex flex-col gap-5 pb-5 border-b border-b-slate-300">
         <div className="flex flex-col gap-2">
-          <h1 className="2md:text-3xl text-2xl font-semibold">About Me </h1>
+          <h1 className="text-2xl font-semibold 2md:text-3xl">About Me </h1>
         </div>
         <p className="text-justify">
           Hello! My name is Shofiyul Fuad. I am a graduate of Trunojoyo
@@ -89,13 +89,34 @@ const MainAbout = () => {
       </div>
       <div className="flex flex-col gap-3 py-5 ">
         <div className="flex flex-col gap-1">
-          <div className="flex gap-2 text-xl items-center">
+          <div className="flex items-center gap-2 text-xl">
             <Logo name={"sertificate"} size={24} />
 
             <h1 className="font-semibold"> Certificates</h1>
           </div>
           <p className="text-sm">My current certificates</p>
         </div>
+        <MainAboutSertif
+          img={obj.krpai.img}
+          judul={obj.krpai.judul}
+          category={obj.krpai.category}
+          desc={obj.krpai.desc}
+          link={obj.krpai.link}
+        />
+        <MainAboutSertif
+          img={obj.krsri.img}
+          judul={obj.krsri.judul}
+          category={obj.krsri.category}
+          desc={obj.krsri.desc}
+          link={obj.krsri.link}
+        />
+        <MainAboutSertif
+          img={obj.asprak.img}
+          judul={obj.asprak.judul}
+          category={obj.asprak.category}
+          desc={obj.asprak.desc}
+          link={obj.asprak.link}
+        />
         <MainAboutSertif
           img={obj.js.img}
           judul={obj.js.judul}
@@ -131,27 +152,7 @@ const MainAbout = () => {
           desc={obj.web.desc}
           link={obj.web.link}
         />
-        <MainAboutSertif
-          img={obj.krpai.img}
-          judul={obj.krpai.judul}
-          category={obj.krpai.category}
-          desc={obj.krpai.desc}
-          link={obj.krpai.link}
-        />
-        <MainAboutSertif
-          img={obj.krsri.img}
-          judul={obj.krsri.judul}
-          category={obj.krsri.category}
-          desc={obj.krsri.desc}
-          link={obj.krsri.link}
-        />
-        <MainAboutSertif
-          img={obj.asprak.img}
-          judul={obj.asprak.judul}
-          category={obj.asprak.category}
-          desc={obj.asprak.desc}
-          link={obj.asprak.link}
-        />
+        
       </div>
     </motion.div>
   );

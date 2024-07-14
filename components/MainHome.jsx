@@ -36,7 +36,7 @@ const MainHome = () => {
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-1">
-            <h1 className="text-sm">Skills Web Frontend</h1>
+            <h1 className="text-sm">Skills Web</h1>
           </div>
           <div>
             <ul className="grid justify-between grid-cols-4 2lg:flex">

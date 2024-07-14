@@ -17,7 +17,7 @@ export const counterSlice = createSlice({
       state.burger = !state.burger;
     },
     setTheme(state) {
-      state.theme = !state.theme;
+      state.theme = state.theme;
     },
   },
 });
