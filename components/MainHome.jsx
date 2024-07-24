@@ -88,12 +88,12 @@ const MainHome = () => {
                   Tailwind
                 </h1>
               </li>
-              <li className="flex flex-col items-center gap-2 pb-2 group/mongo">
+              {/* <li className="flex flex-col items-center gap-2 pb-2 group/mongo">
                 <Logo name="Mongodb" size={40} />
                 <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mongo:opacity-100 group-hover/mongo:translate-y-0">
                   Mongodb
                 </h1>
-              </li>
+              </li> */}
               <li className="flex flex-col items-center gap-2 pb-2 group/mysql">
                 <Logo name="MySQL" size={40} />
                 <h1 className="text-xs transition-all duration-300 -translate-y-full opacity-0 group-hover/mysql:opacity-100 group-hover/mysql:translate-y-0">
